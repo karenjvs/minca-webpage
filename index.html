@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Minca</title>
+    <link rel="stylesheet" href="./css/styles_index.css">
+    <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css">
+</head>
+<body>
+    <header class="header">
+        <a href="index.html">
+            <img class="logo" src="./images/minca_logo.png" alt="logo de hotel">
+        </a>
+        <a href="#menu" class="header__icono">
+          <span class="jam jam-menu"></span>
+        </a>
+        <nav class="nav" id="menu">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="index.html">Inicio</a></li>
+                <li class="nav__item"><a href="./pages/rooms.html">Habitaciones</a></li>
+                <li class="nav__item"><a href="./pages/services.html">Servicios</a></li>
+                <li class="nav__item"><a href="./pages/experiences.html">Experiencias</a></li>
+                <li class="nav__item"><a href="./pages/about_us.html">Nosotros</a></li>
+                <div>
+                    <form>
+                        <li class="nav__item">
+                            <label for="idioma">Idioma</label>
+                            <select name="idioma" id="idioma">
+                                <option value="español">Español</option>
+                                <option value="ingles">Inglés</option>
+                            </select>
+                        </li>
+                    </form>
+                </div>
+                <li class="nav__item nav__item--oculto">
+                  <a href="#cerrado">Cerrar Menú</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+      <section class="grid">
+
+        <div class="grid__hijo1">
+          <span class="grid__hijo1_Span">Donde nacen los recuerdos</span>
+        </div>
+
+
+            <div class="grid__hijo2">
+                <h2> Reservaciones</h2>
+                <div>
+                  <div class="grid__hijo2_ReservationCalendars">
+                    <div>
+
+                      <label for="date">Llegada:</label>
+                      <input type="date" id="date" name="date" value="2022-06-26" min="2022-06-26" max="2023-01-31">
+                    </div>
+                    <div>
+                      <label for="date">Salida:</label>
+                      <input type="date" id="date" name="date" value="2022-06-26" min="2022-06-26" max="2023-01-31">
+                    </div>
+                  </div>
+
+                  <div class="grid__hijo2_reservationSubmit">
+                  <input type="submit" value="Reservar">
+                  </div>
+                </div>
+            </div>
+
+            <div class="grid__hijo3">
+                <!--Fotos de hotel en carrucel-->
+                <img src="./images/alberca.jpg" alt="alberca" width="200" height="200">
+                <img src="./images/salon_eventos.jpg" alt="salon_eventos" width="200" height="200">
+                <img src="./images/gym.png" alt="gym" width="200" height="200">
+            </div>
+
+
+        </section>
+
+
+        <section class="inicioMainRooms">
+            <h1>Habitaciones</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat ex praesentium nihil suscipit inventore ut, eius at, temporibus mollitia pariatur dolorem officiis earum nam nemo ducimus provident ea ab repellendus!</p>
+            <ul>
+              <div class="grid__rooms">
+                  <li class="hijo1">
+                    <h1>Habitación Estándar</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt vel unde sapiente ratione alias ut, assumenda necessitatibus, sed perspiciatis modi corporis blanditiis? Eveniet porro nesciunt illum voluptas! Incidunt, aliquid? Nostrum?</p>
+                  </li>
+                  <img class="hijo2" src="./images/habitacion_standar.jpg" alt="habitacion_standar">
+                  <img class="hijo3" src="./images/habitacion_ejecutiva.jpg" alt="habitacion_e">
+                  <li class="hijo4">
+                    <h1>Habitación Ejecutiva</h1>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt vel unde sapiente ratione alias ut, assumenda necessitatibus, sed perspiciatis modi corporis blanditiis? Eveniet porro nesciunt illum voluptas! Incidunt, aliquid? Nostrum?</p>
+                  </li>
+              </div>
+            </ul>
+            <a href="./pages/rooms.html">Ver todas las habitaciones</a>
+            <!-- Fotos de habitaciones destacadas-->
+        </section>
+
+        <section class="inicioMainServices">
+            <h1>Servicios</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat ex praesentium nihil suscipit inventore ut, eius at, temporibus mollitia pariatur dolorem officiis earum nam nemo ducimus provident ea ab repellendus!</p>
+            <ul>
+              <div class="grid__services">
+                <li>
+                  <h1>Albercas</h1>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt vel unde sapiente ratione alias ut, assumenda necessitatibus, sed perspiciatis modi corporis blanditiis? Eveniet porro nesciunt illum voluptas! Incidunt, aliquid? Nostrum?</p>
+                </li>
+                <img src="./images/alberca.jpg" alt="alberca">
+                <li>
+                  <h1>Buffet</h1>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt vel unde sapiente ratione alias ut, assumenda necessitatibus, sed perspiciatis modi corporis blanditiis? Eveniet porro nesciunt illum voluptas! Incidunt, aliquid? Nostrum?</p>
+                </li>
+                <img src="./images/buffet.jpg" alt="buffet" >
+                <li>
+                  <h1>Gym</h1>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt vel unde sapiente ratione alias ut, assumenda necessitatibus, sed perspiciatis modi corporis blanditiis? Eveniet porro nesciunt illum voluptas! Incidunt, aliquid? Nostrum?</p>
+                </li>
+                <img src="./images/gym.png" alt="gym" >
+                <li>
+                  <h1>Salón de eventos</h1>
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt vel unde sapiente ratione alias ut, assumenda necessitatibus, sed perspiciatis modi corporis blanditiis? Eveniet porro nesciunt illum voluptas! Incidunt, aliquid? Nostrum?</p>
+                </li>
+                <img src="./images/salon_eventos.jpg" alt="salon_eventos" >
+              </div>
+            </ul>
+            <a href="./pages/services.html">Conocer los detalles</a>
+            <!-- Fotos de los servicios mas relevantes-->
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+          <div class="footer_contac">
+            <h1>Contacto</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat ex praesentium nihil suscipit inventore ut, eius at, temporibus mollitia pariatur dolorem officiis earum nam nemo ducimus provident ea ab repellendus!</p>
+            <form>
+              <div>
+                  <label for="nombre">Nombre</label>
+                  <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required>
+              </div>
+              <div>
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" placeholder="Ingrese su correo" required>
+              </div>
+              <div>
+                  <label for="telefono">Telefono</label>
+                  <input type="tel" id="telefono" name="telefono" placeholder="Ingrese su telefono">
+              </div>
+              <div>
+                  <label for="">Mensaje</label>
+                  <textarea name="mensaje" cols="15" rows="3" required></textarea>
+              </div>
+              <div>
+                  <input type="submit" value="Enviar">
+              </div>
+            </form>
+          </div>
+
+          <div class="footer_visitus">
+            <h1>Visitanos</h1>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14447.34913954035!2d55.1852468!3d25.1411914!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb3da71b879f0e038!2sBurj%20Al%20Arab!5e0!3m2!1ses-419!2smx!4v1656280268752!5m2!1ses-419!2smx" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+
+        <div class="finalFooter">
+          <div class="finalFooter_logoRedes">
+            <img class="logoFooter" src="./images/minca_logo.png" alt="logo de hotel">
+            <div class="finalFooter_folowus">
+              <p>Siguenos:</p>
+              <ul>
+                <li>
+                    <a href="https://es-la.facebook.com/" target="_blank">Facebook</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <p class="finalFooter_copyright">Derechos reservados - MINCA</p>
+        </div>
+    </footer>
+</body>
+</html>
