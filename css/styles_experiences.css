@@ -66,12 +66,20 @@
 .grid_experiences{
   display: grid;
   grid-template-columns: 50% 50%;
+  grid-template-rows: 1fr 1fr;
   margin: 120px 100px 30px 100px;
   column-gap: 5px;
+  grid-template-areas: 
+  "hijo1 hijo2"
+  "hijo3 hijo3"
+  ;
 }
 
 .mainExp__intro-bestExp{
   background-color: antiquewhite;
+  grid-area: hijo1;
+  height: 500px;
+
 }
 
 .mainExp__intro-bestExp > h1{
@@ -80,7 +88,25 @@
 
 .mainExp__intro-cover{ /* TO BE DEFINED PHOTOS IN CAROUSEL */
   width: 100%;
+  grid-area: hijo2;
+  height: 500px;
 }
+
+.card_container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  width: 100%;
+  grid-area: hijo3;
+}
+
+.card_container img {
+  height: 400px;
+
+}
+
+
+
 
 /* FOOTER  STYLES */
 
@@ -194,11 +220,17 @@
     grid-template-columns: 100%;
     grid-template-rows: 1fr 1fr;
     margin: 100px 20px 10px 20px;
+    grid-template-areas: 
+    "hijo1"
+    "hijo2"
+    "hijo3"
+    ;
   }
 
   .mainExp__intro-bestExp{
     background-color: antiquewhite;
-    height: 300px;
+    height: 400px;
+    grid-area: hijo1;
   }
 
   .mainExp__intro-bestExp > h1{
@@ -211,7 +243,10 @@
   }
 
   .mainExp__intro-cover{ /* TO BE DEFINED PHOTOS IN CAROUSEL */
+    grid-area: hijo2;
     width: 100%;
+    height: 300px;
+
   }
 
   /* FOOTER  STYLES */
