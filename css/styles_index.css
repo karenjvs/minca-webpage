@@ -5,6 +5,10 @@
   text-decoration: none;
 }
 
+ul {
+  padding-left: 0px;
+}
+
 /* HEADER STYLES */
 
 .header {
@@ -121,7 +125,12 @@
   grid-area: hijo3;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+}
+
+.carousel-item img {
+  height: 200px;
+  width: 100%;
 }
 
 /* ROOMS STYLES */
@@ -345,10 +354,11 @@
   .grid {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas:
     "hijo1"
     "hijo2"
+    "hijo3"
     ;
     gap: 5px;
     height: 200px;
@@ -375,7 +385,6 @@
     flex-direction:column;
     justify-content: center;
     align-items: center;
-    height: 150px;
   }
 
   .grid__hijo2 > h2 {
@@ -391,13 +400,14 @@
   .grid__hijo2_reservationSubmit{
     text-align: end;
     margin-top: 20px;
+    margin-bottom: 5px;
   }
 
   /* CAROUSEL PHONES*/
 
   .grid__hijo3{
     grid-area: hijo3;
-    display: none;
+    display: flex;
     align-items: center;
     justify-content: space-around;
   }
@@ -407,7 +417,7 @@
   .inicioMainRooms{
     display: flex;
     flex-direction: column;
-    margin-top: 25px;
+    margin-top: 220px;
   }
 
   .inicioMainRooms  > h1 {
