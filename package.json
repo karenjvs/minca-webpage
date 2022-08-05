@@ -5,8 +5,16 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-css": "node-sass --include-path scss scss/main.scss css/main.css",
-    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+    "build-css-aboutus": "node-sass --include-path scss scss/styles_aboutus.scss css/styles_aboutus.css",
+    "build-css-experiences": "node-sass --include-path scss scss/styles_experiences.scss css/styles_experiences.css",
+    "build-css-index": "node-sass --include-path scss scss/styles_index.scss css/styles_index.css",
+    "build-css-rooms": "node-sass --include-path scss scss/styles_rooms.scss css/styles_rooms.css",
+    "build-css-services": "node-sass --include-path scss scss/styles_services.scss css/styles_services.css",
+    "watch-css-aboutus": "nodemon -e scss -x \"npm run build-css-aboutus\"",
+    "watch-css-experiences": "nodemon -e scss -x \"npm run build-css-experiences\"",
+    "watch-css-index": "nodemon -e scss -x \"npm run build-css-index\"",
+    "watch-css-rooms": "nodemon -e scss -x \"npm run build-css-rooms\"",
+    "watch-css-services": "nodemon -e scss -x \"npm run build-css-services\""
   },
   "repository": {
     "type": "git",

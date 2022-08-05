@@ -1,0 +1,46 @@
+
+
+/* HEADER STYLES */
+.header {
+  background-color: #cfcfed;
+  color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10000;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; }
+
+.logo {
+  width: 200px;
+  height: 100px;
+  padding: 0px;
+  margin-left: 20px; }
+
+.header__icono {
+  font-size: 32px;
+  color: rgba(0, 0, 0, 0.308);
+  text-decoration: none;
+  display: none; }
+
+.nav__item--oculto {
+  display: none; }
+
+.nav__list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 19px; }
+
+.nav__item {
+  margin-left: 18px; }
+
+/* Remove all text-decoration to the links inside the nav_item class thanks to the " > " */
+.nav__item > a {
+  text-decoration: none;
+  color: black; }
