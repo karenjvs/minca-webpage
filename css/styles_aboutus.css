@@ -4,6 +4,10 @@
   box-sizing: border-box;
   text-decoration: none; }
 
+ul {
+  padding-left: 0px;
+  margin-bottom: 0px; }
+
 /* HEADER STYLES */
 .header {
   background-color: #cfcfed;
@@ -107,7 +111,8 @@
 .realFooter {
   /* UPDATE WITH THIS CHANGE ALL PAGES */
   position: fixed;
-  bottom: 0; }
+  bottom: 0;
+  width: 100%; }
 
 /* MEDIA QUERIES */
 /* Movil */

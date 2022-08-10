@@ -1,6 +1,6 @@
-@import "./partials/base.scss";
-@import "./partials/header.scss";
-@import "./partials/footer.scss";
+@import "./partials/_base.scss";
+@import "./partials/_header.scss";
+@import "./partials/_footer.scss";
 
 /* MAIN STYLES */
 
@@ -10,7 +10,7 @@
   grid-template-rows: 1fr 1fr;
   margin: 120px 100px 30px 100px;
   column-gap: 5px;
-  grid-template-areas: 
+  grid-template-areas:
   "hijo1 hijo2"
   "hijo3 hijo3"
   ;

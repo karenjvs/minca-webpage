@@ -1,6 +1,6 @@
-@import "./partials/base.scss";
-@import "./partials/header.scss";
-@import "./partials/footer.scss";
+@import "./partials/_base.scss";
+@import "./partials/_header.scss";
+@import "./partials/_footer.scss";
 
 /* MAIN STYLES */
 
@@ -22,6 +22,7 @@
 .realFooter{ /* UPDATE WITH THIS CHANGE ALL PAGES */
   position:fixed;
   bottom: 0;
+  width: 100%;
 }
 
 /* MEDIA QUERIES */

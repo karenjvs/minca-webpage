@@ -4,6 +4,10 @@
   box-sizing: border-box;
   text-decoration: none; }
 
+ul {
+  padding-left: 0px;
+  margin-bottom: 0px; }
+
 /* HEADER STYLES */
 .header {
   background-color: #cfcfed;
@@ -91,9 +95,6 @@
 
 .logoFooter {
   width: 200px; }
-
-ul {
-  padding-left: 0px; }
 
 /* MAIN STYLES */
 .main {
