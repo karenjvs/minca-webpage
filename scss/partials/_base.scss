@@ -9,3 +9,8 @@ ul {
   padding-left: 0px;
   margin-bottom: 0px;
 }
+
+@mixin sizes($width, $height) {
+  width: $width;
+  height: $height;
+}

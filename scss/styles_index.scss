@@ -68,8 +68,7 @@
 }
 
 .carousel-item img {
-  height: 200px;
-  width: 100%;
+  @include sizes(100%, 200px);
 }
 
 /* ROOMS STYLES */
@@ -120,8 +119,7 @@
 }
 
 .grid__rooms > img {
-  width: 100%;
-  height: 300px;
+  @include sizes(100%, 300px);
 }
 
 
@@ -166,8 +164,7 @@
 
 .grid__services > img {
   margin: auto;
-  width: 600px;
-  height: 300px;
+  @include sizes(600px, 300px);
 }
 
 .grid__services> li > h1 {
@@ -192,8 +189,7 @@
   }
 
   .logo{
-    width: 100px;
-    height: 50px;
+    @include sizes(100px, 50px);
     padding: 0px;
     margin-left: 10px;
   }
@@ -213,8 +209,7 @@
     z-index: 10000000000;
     top: 0;
     left: 0;
-    width: 80%;
-    height: 100vh;
+    @include sizes(80%, 100vh);
   }
 
   .nav:target{
@@ -367,8 +362,7 @@
   }
 
   .grid__rooms > img {
-    width: 100%;
-    height: 300px;
+    @include sizes(100%, 300px);
   }
 
   /* SERVICES STYLES */
@@ -417,8 +411,7 @@
 
   .grid__services > img {
     margin: auto;
-    width: 100%;
-    height: 300px;
+    @include sizes(100%, 300px);
   }
 
   .grid__services> li > h1 {

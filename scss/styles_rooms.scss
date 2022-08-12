@@ -15,8 +15,7 @@
 }
 
 .mainRooms__cover {
-  width: 100%;
-  height: 350px;
+  @include sizes(100%, 350px);
 }
 
 .mainRooms__intro-container {
@@ -87,8 +86,7 @@
 }
 
 .carousel-item > img {
-  width: 100%;
-  height: 300px;
+  @include sizes(100%, 300px);
 }
 
 .mainRooms___rooms-item > li > h1 {
@@ -141,8 +139,7 @@
     z-index: 10000000000;
     top: 0;
     left: 0;
-    width: 80%;
-    height: 100vh;
+    @include sizes(80%, 100vh);
   }
 
   .nav:target{
@@ -168,8 +165,7 @@
   }
 
   .mainRooms__cover {
-    width: 100%;
-    height: 250px;
+    @include sizes(100%, 250px);
   }
 
 
@@ -235,8 +231,7 @@
 
   .mainRooms___rooms-item > img { /* TO BE DEFINED PHOTOS IN CAROUSEL */
     margin: auto;
-    width: 100%;
-    height: 180px;
+    @include sizes(100%, 180px);
   }
 
   #carouselExampleControls{
