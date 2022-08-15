@@ -1,0 +1,65 @@
+
+/* MEDIA QUERIES */
+
+/* Movil */
+@media screen and (max-width:600px){
+
+  /* FOOTER  STYLES */
+
+  .footer{
+    display: flex;
+    flex-direction: column;
+    margin: 25px 20px 10px 20px;
+    background-color: rgba(164, 47, 207, 0.118);
+  }
+
+  .footer_contac{
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer_contac  > h1 {
+    font-size: 30px;
+  }
+
+  .footer_visitus{
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer_visitus  > h1 {
+    font-size: 30px;
+  }
+
+  .finalFooter{
+    background-color:rgb(207, 207, 237);
+    color: black;
+  }
+
+  .finalFooter_logoRedes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .finalFooter_folowus > p {
+    font-size: 20px;
+  }
+
+  .finalFooter_folowus > ul {
+    list-style: none;
+    }
+
+  .finalFooter_folowus {
+    margin-right: 25px;
+  }
+
+  .finalFooter_copyright{
+    text-align: center;
+  }
+
+  .logoFooter{
+    width: 150px;
+  }
+
+}

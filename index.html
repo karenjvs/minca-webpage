@@ -8,212 +8,195 @@
     <meta name="keywords"content="HOTEL, MINCA, VACACIONES, RESERVACIONES, DESCANSO, BUFFET, ALBERCA, SALON DE EVENTOS">
     <title>Hotel Minca</title>
     <link rel="stylesheet" href="https://unpkg.com/jam-icons/css/jam.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="./css/styles_index.css">
 </head>
 <body>
   <header class="header">
-      <a href="index.html">
-          <img class="logo" src="./images/minca_logo.png" alt="logo de hotel">
-      </a>
-      <a href="#menu" class="header__icono">
-        <span class="jam jam-menu"></span>
-      </a>
-      <nav class="nav" id="menu">
-          <ul class="nav__list">
-              <li class="nav__item"><a href="index.html">Inicio</a></li>
-              <li class="nav__item"><a href="./pages/rooms.html">Habitaciones</a></li>
-              <li class="nav__item"><a href="./pages/services.html">Servicios</a></li>
-              <li class="nav__item"><a href="./pages/experiences.html">Experiencias</a></li>
-              <li class="nav__item"><a href="./pages/about_us.html">Nosotros</a></li>
-              <div>
-                  <form>
-                      <li class="nav__item">
-                          <label for="idioma">Idioma</label>
-                          <select name="idioma" id="idioma">
-                              <option value="español">Español</option>
-                              <option value="ingles">Inglés</option>
-                          </select>
-                      </li>
-                  </form>
-              </div>
-              <li class="nav__item nav__item--oculto">
-                <a href="#cerrado">Cerrar Menú</a>
-              </li>
-          </ul>
-      </nav>
+    <a href="index.html">
+      <img class="logo" src="./images/minca_logo.png" alt="logo de hotel">
+    </a>
+    <a href="#menu" class="header__icono">
+      <span class="jam jam-menu"></span>
+    </a>
+    <nav class="nav" id="menu">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="index.html">Inicio</a></li>
+        <li class="nav__item"><a href="./pages/rooms.html">Habitaciones</a></li>
+        <li class="nav__item"><a href="./pages/services.html">Servicios</a></li>
+        <li class="nav__item"><a href="./pages/experiences.html">Experiencias</a></li>
+        <li class="nav__item"><a href="./pages/about_us.html">Nosotros</a></li>
+        <div>
+          <form>
+            <li class="nav__item">
+              <label for="idioma">Idioma</label>
+              <select name="idioma" id="idioma">
+                  <option value="español">Español</option>
+                  <option value="ingles">Inglés</option>
+              </select>
+            </li>
+          </form>
+        </div>
+        <li class="nav__item nav__item--oculto">
+          <a href="#cerrado">Cerrar Menú</a>
+        </li>
+      </ul>
+    </nav>
   </header>
 
-    <main class="main">
-      <section class="grid">
+  <main class="main">
+    <section class="grid">
 
-        <div class="grid__hijo1">
-          <span class="grid__hijo1_Span">Donde nacen los recuerdos</span>
-        </div>
+      <div class="grid__hijo1">
+        <span class="grid__hijo1_Span">Donde nacen los recuerdos</span>
+      </div>
 
+      <div class="grid__hijo2">
+        <h2 class="animate__animated animate__flash"> Reservaciones</h2>
+        <div>
+          <div class="grid__hijo2_ReservationCalendars">
+            <div>
 
-            <div class="grid__hijo2">
-                <h2 class="animate__animated animate__flash"> Reservaciones</h2>
-                <div>
-                  <div class="grid__hijo2_ReservationCalendars">
-                    <div>
-
-                      <label for="date">Llegada:</label>
-                      <input type="date" id="date" name="date" value="2022-06-26" min="2022-06-26" max="2023-01-31">
-                    </div>
-                    <div>
-                      <label for="date">Salida:</label>
-                      <input type="date" id="date" name="date" value="2022-06-26" min="2022-06-26" max="2023-01-31">
-                    </div>
-                  </div>
-
-                  <div class="grid__hijo2_reservationSubmit">
-                  <input type="submit" value="Reservar">
-                  </div>
-                </div>
+              <label for="date">Llegada:</label>
+              <input type="date" id="date" name="date" value="2022-06-26" min="2022-06-26" max="2023-01-31">
             </div>
-
-          <div class="grid__hijo3">
-                <!--Fotos de hotel en carrucel
-                <img src="./images/alberca.jpg" alt="alberca" width="200" height="200">
-                <img src="./images/salon_eventos.jpg" alt="salon_eventos" width="200" height="200">
-                <img src="./images/gym.png" alt="gym" width="200" height="200">-->
-
-            <div id="carouselExampleControls" class="carousel slide w-100" data-bs-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="./images/alberca.jpg" class="d-block w-100" alt="alberca">
-                </div>
-                <div class="carousel-item">
-                  <img src="./images/salon_eventos.jpg" class="d-block w-100" alt="salon_eventos">
-                </div>
-                <div class="carousel-item">
-                  <img src="./images/gym.png" class="d-block w-100" alt="gym">
-                </div>
-              </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
+            <div>
+              <label for="date">Salida:</label>
+              <input type="date" id="date" name="date" value="2022-06-26" min="2022-06-26" max="2023-01-31">
             </div>
           </div>
-        </section>
 
-        <section class="inicioMainRooms">
-            <h1 class="animate__animated animate__fadeInUp">Habitaciones</h1>
-            <p>Descansa en Hotel Minca, todas nuestras habitaciones cuentan con aire acondicionado, televisión, teléfono, Wi-Fi, baño completo y muchos servicios más.</p>
-            <ul>
-              <div class="grid__rooms">
-                  <li class="hijo1">
-                    <h1 class="animate__animated animate__backInLeft">Habitación Estándar</h1>
-                    <p>Habitación equipada con 1 cama King size, para un máximo de 2 adultos; o con 2 camas Queen size para hospedar hasta 4 adultos.</p>
-                  </li>
-                  <img class="hijo2" src="./images/habitacion_standar.jpg" alt="habitacion_standar">
-                  <img class="hijo3" src="./images/habitacion_ejecutiva.jpg" alt="habitacion_e">
-                  <li class="hijo4">
-                    <h1 class="animate__animated animate__backInRight">Habitación Ejecutiva</h1>
-                    <p>Amplia habitación equipada con 1 cama King size para alojar 2 adultos; o con 2 camas Matrimoniales para 4 adultos; o con 2 camas Queen size para hasta 4 adultos.</p>
-                  </li>
-              </div>
-            </ul>
-            <a href="./pages/rooms.html">Ver todas las habitaciones</a>
-            <!-- Fotos de habitaciones destacadas-->
-        </section>
-
-        <section class="inicioMainServices">
-            <h1 class="animate__animated animate__fadeInUp">Servicios</h1>
-            <p>Hotel Minca ofrece el espacio ideal para aquellos en busca de servicio profesional en hotelería.</p>
-            <ul>
-              <div class="grid__services">
-                <li>
-                  <h1>Albercas</h1>
-                  <p>Disfruta de las albercas más grandes, contamos con servicios de piscinadas, entre otras actividades acuáticas:
-                      <ul>
-                        <li>Distintos pases para la alberca *Sin ser huésped</li>
-                        <li>Aqua Bar</li>
-                        <li>Aqua Fitness</li>
-                      </ul>
-                </p>
-                </li>
-                <img src="./images/alberca.jpg" alt="alberca">
-                <li>
-                  <h1>Buffet</h1>
-                  <p>Todos nuestros platillos son elaborados al momento con ingredientes locales y de la mejor calidad</p>
-                </li>
-                <img src="./images/buffet.jpg" alt="buffet" >
-                <li>
-                  <h1>Gym</h1>
-                  <p>Ejercita tu cuerpo con un nuevo concepto de bienestar y salud.</p>
-                </li>
-                <img src="./images/gym.png" alt="gym" >
-                <li>
-                  <h1>Salón de eventos</h1>
-                  <p>Organiza y celebra tu evento especial en cualquiera de nuestros amplios salones, con capacidad máxima de 700 personas</p>
-                </li>
-                <img src="./images/salon_eventos.jpg" alt="salon_eventos" >
-              </div>
-            </ul>
-            <a href="./pages/services.html">Conocer los detalles</a>
-            <!-- Fotos de los servicios mas relevantes-->
-        </section>
-    </main>
-
-    <footer>
-        <div class="footer">
-          <div class="footer_contac">
-            <h1 class="animate__animated animate__fadeInUp">Contacto</h1>
-            <p>Nos complace brindarte el servicio que mereces. Si tienes algún comentario o sugerencia, no dudes en escribirnos</p>
-            <form>
-              <div>
-                  <label for="nombre">Nombre</label>
-                  <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required>
-              </div>
-              <div>
-                  <label for="email">Email</label>
-                  <input type="email" id="email" name="email" placeholder="Ingrese su correo" required>
-              </div>
-              <div>
-                  <label for="telefono">Telefono</label>
-                  <input type="tel" id="telefono" name="telefono" placeholder="Ingrese su telefono">
-              </div>
-              <div>
-                  <label for="">Mensaje</label>
-                  <textarea name="mensaje" cols="15" rows="3" required></textarea>
-              </div>
-              <div>
-                  <input type="submit" value="Enviar">
-              </div>
-            </form>
-          </div>
-
-          <div class="footer_visitus">
-            <h1 class="animate__animated animate__fadeInUp">Visitanos</h1>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14447.34913954035!2d55.1852468!3d25.1411914!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb3da71b879f0e038!2sBurj%20Al%20Arab!5e0!3m2!1ses-419!2smx!4v1656280268752!5m2!1ses-419!2smx" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div class="grid__hijo2_reservationSubmit">
+            <input type="submit" value="Reservar">
           </div>
         </div>
+      </div>
 
-        <div class="finalFooter">
-          <div class="finalFooter_logoRedes">
-            <img class="logoFooter" src="./images/minca_logo.png" alt="logo de hotel">
-            <div class="finalFooter_folowus">
-              <p>Siguenos:</p>
+      <div class="grid__hijo3">
+        <div class="slider">
+          <ul>
+            <li>
+              <img src="./images/alberca.jpg" alt="alberca">
+            </li>
+            <li>
+              <img src="./images/salon_eventos.jpg" alt="salon_eventos">
+            </li>
+            <li>
+              <img src="./images/gym.png" alt="gym">
+            </li>
+            <li>
+              <img src="./images/gym.png" alt="gym">
+            </li>
+          </ul>
+      </div>
+      </div>
+    </section>
+
+    <section class="inicioMainRooms">
+      <h1 class="animate__animated animate__fadeInUp">Habitaciones</h1>
+      <p>Descansa en Hotel Minca, todas nuestras habitaciones cuentan con aire acondicionado, televisión, teléfono, Wi-Fi, baño completo y muchos servicios más.</p>
+      <ul>
+        <div class="grid__rooms">
+          <li class="hijo1">
+            <h1 class="animate__animated animate__backInLeft">Habitación Estándar</h1>
+            <p>Habitación equipada con 1 cama King size, para un máximo de 2 adultos; o con 2 camas Queen size para hospedar hasta 4 adultos.</p>
+          </li>
+          <img class="hijo2" src="./images/habitacion_standar.jpg" alt="habitacion_standar">
+          <img class="hijo3" src="./images/habitacion_ejecutiva.jpg" alt="habitacion_e">
+          <li class="hijo4">
+            <h1 class="animate__animated animate__backInRight">Habitación Ejecutiva</h1>
+            <p>Amplia habitación equipada con 1 cama King size para alojar 2 adultos; o con 2 camas Matrimoniales para 4 adultos; o con 2 camas Queen size para hasta 4 adultos.</p>
+          </li>
+        </div>
+      </ul>
+      <a href="./pages/rooms.html">Ver todas las habitaciones</a>
+    </section>
+
+    <section class="inicioMainServices">
+      <h1 class="animate__animated animate__fadeInUp">Servicios</h1>
+      <p>Hotel Minca ofrece el espacio ideal para aquellos en busca de servicio profesional en hotelería.</p>
+      <ul>
+        <div class="grid__services">
+          <li>
+            <h1>Albercas</h1>
+            <p>Disfruta de las albercas más grandes, contamos con servicios de piscinadas, entre otras actividades acuáticas:
               <ul>
-                <li>
-                    <a href="https://es-la.facebook.com/" target="_blank">Facebook</a>
-                </li>
+                <li>Distintos pases para la alberca *Sin ser huésped</li>
+                <li>Aqua Bar</li>
+                <li>Aqua Fitness</li>
               </ul>
-            </div>
-          </div>
-
-          <p class="finalFooter_copyright">Derechos reservados - MINCA</p>
+            </p>
+          </li>
+          <img src="./images/alberca.jpg" alt="alberca">
+          <li>
+            <h1>Buffet</h1>
+            <p>Todos nuestros platillos son elaborados al momento con ingredientes locales y de la mejor calidad</p>
+          </li>
+          <img src="./images/buffet.jpg" alt="buffet" >
+          <li>
+            <h1>Gym</h1>
+            <p>Ejercita tu cuerpo con un nuevo concepto de bienestar y salud.</p>
+          </li>
+          <img src="./images/gym.png" alt="gym" >
+          <li>
+            <h1>Salón de eventos</h1>
+            <p>Organiza y celebra tu evento especial en cualquiera de nuestros amplios salones, con capacidad máxima de 700 personas</p>
+          </li>
+          <img src="./images/salon_eventos.jpg" alt="salon_eventos" >
         </div>
-    </footer>
-    <!-- JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+      </ul>
+      <a href="./pages/services.html">Conocer los detalles</a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer">
+      <div class="footer_contac">
+        <h1 class="animate__animated animate__fadeInUp">Contacto</h1>
+        <p>Nos complace brindarte el servicio que mereces. Si tienes algún comentario o sugerencia, no dudes en escribirnos</p>
+        <form>
+          <div>
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required>
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Ingrese su correo" required>
+          </div>
+          <div>
+            <label for="telefono">Telefono</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="Ingrese su telefono">
+          </div>
+          <div>
+            <label for="">Mensaje</label>
+            <textarea name="mensaje" cols="15" rows="3" required></textarea>
+          </div>
+          <div>
+            <input type="submit" value="Enviar">
+          </div>
+        </form>
+      </div>
+
+      <div class="footer_visitus">
+        <h1 class="animate__animated animate__fadeInUp">Visitanos</h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14447.34913954035!2d55.1852468!3d25.1411914!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb3da71b879f0e038!2sBurj%20Al%20Arab!5e0!3m2!1ses-419!2smx!4v1656280268752!5m2!1ses-419!2smx" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+
+    <div class="finalFooter">
+      <div class="finalFooter_logoRedes">
+        <img class="logoFooter" src="./images/minca_logo.png" alt="logo de hotel">
+        <div class="finalFooter_folowus">
+          <p>Siguenos:</p>
+          <ul>
+            <li>
+              <a href="https://es-la.facebook.com/" target="_blank">Facebook</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <p class="finalFooter_copyright">Derechos reservados - MINCA</p>
+    </div>
+  </footer>
 </body>
 </html>

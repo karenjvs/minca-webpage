@@ -1,6 +1,9 @@
 @import "./partials/_base.scss";
 @import "./partials/_header.scss";
 @import "./partials/_footer.scss";
+@import "./partials/_media-header.scss";
+@import "./partials/_media-footer.scss";
+
 
 /* MAIN STYLES */
 
@@ -58,7 +61,7 @@
   margin-bottom: 10px;
 }
 
-.mainRooms___rooms-item > li {
+.mainRooms__description {
   display: flex;
   background-color: rgba(255, 213, 0, 0.715);
   width: 50%;
@@ -69,25 +72,38 @@
   margin-left: 5px;
 }
 
-#carouselExampleControls{
+.slider{
   width: 50%;
-}
+  height: 200px;
+  overflow: hidden;
+  }
+  .slider ul{
+    display: flex;
+    animation: cambio 15s infinite alternate linear;
+    width: 400%;
+  }
+  .slider li{
+    width: 100%;
+    list-style: none;
+  }
+  .slider img{
+    width: 100%;
+    height: 200px;
+  }
 
-#carouselExampleControls2{
-  width: 50%;
-}
+  @keyframes cambio{
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
 
-#carouselExampleControls3{
-  width: 50%;
-}
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
 
-#carouselExampleControls4{
-  width: 50%;
-}
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
 
-.carousel-item > img {
-  @include sizes(100%, 300px);
-}
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+  }
 
 .mainRooms___rooms-item > li > h1 {
   font-size: 35px;
@@ -106,51 +122,6 @@
 
 /* Movil */
 @media screen and (max-width:600px){
-
-  /* HEADER STYLES */
-
-  .header {
-    height: 80px;
-  }
-
-  .header__icono {
-    display: block;
-  }
-
-  .logo{
-    width: 100px;
-    height: 50px;
-    padding: 0px;
-    margin-left: 10px;
-  }
-
-  .nav__list{
-    flex-direction: column;
-    justify-content:center;
-    align-items: flex-start;
-    gap: 1rem;
-    height: 100%;
-  }
-
-  .nav {
-    display: none;
-    background-color: rgb(249, 108, 235);
-    position: fixed;
-    z-index: 10000000000;
-    top: 0;
-    left: 0;
-    @include sizes(80%, 100vh);
-  }
-
-  .nav:target{
-    display: block;
-  }
-
-  .nav__item--oculto{
-    display: block;
-  }
-
-
 
   /* MAIN STYLES */
 
@@ -219,38 +190,21 @@
     flex-direction: column;
   }
 
-  .mainRooms___rooms-item > li {
+  .mainRooms__description {
     display: flex;
     background-color: rgba(255, 213, 0, 0.715);
     width: 100%;
-    list-style: none;
     align-items: center;
     flex-direction:column;
     justify-content: center;
+    margin-left: 0px;
   }
 
-  .mainRooms___rooms-item > img { /* TO BE DEFINED PHOTOS IN CAROUSEL */
-    margin: auto;
-    @include sizes(100%, 180px);
-  }
-
-  #carouselExampleControls{
+  .slider{
     width: 100%;
   }
 
-  #carouselExampleControls2{
-    width: 100%;
-  }
-
-  #carouselExampleControls3{
-    width: 100%;
-  }
-
-  #carouselExampleControls4{
-    width: 100%;
-  }
-
-  .mainRooms___rooms-item > li > h1 {
+  .mainRooms__description > h1 {
     font-size: 35px;
     margin-bottom: 25px;
     margin-top: 10px;
@@ -264,65 +218,6 @@
     margin-top: 25px;
   }
 
-  /* FOOTER  STYLES */
-
-  .footer{
-    display: flex;
-    flex-direction: column;
-    margin: 25px 20px 10px 20px;
-    background-color: rgba(164, 47, 207, 0.118);
-  }
-
-  .footer_contac{
-    width: 100%;
-    text-align: center;
-  }
-
-  .footer_contac  > h1 {
-    font-size: 50px;
-  }
-
-  .footer_visitus{
-    width: 100%;
-    text-align: center;
-  }
-
-  .footer_visitus  > h1 {
-    font-size: 50px;
-  }
-
-  .finalFooter{
-    background-color:rgb(207, 207, 237);
-    color: black;
-  }
-
-  .finalFooter_logoRedes{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .finalFooter_folowus > p {
-    font-size: 20px;
-  }
-
-  .finalFooter_folowus > ul {
-    list-style: none;
-    }
-
-  .finalFooter_folowus {
-    margin-right: 25px;
-  }
-
-  .finalFooter_copyright{
-    text-align: center;
-  }
-
-  .logoFooter{
-    width: 150px;
-  }
 
 }
-
-
 
