@@ -130,8 +130,8 @@
     z-index: 10000000000;
     top: 0;
     left: 0;
-    width: 80%;
-    height: 100vh;
+
+    @include sizes(80%, 100vh);
   }
 
   .nav:target{
