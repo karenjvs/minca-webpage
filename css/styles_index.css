@@ -96,6 +96,76 @@ ul {
 .logoFooter {
   width: 200px; }
 
+/* MEDIA QUERIES */
+/* Movil */
+@media screen and (max-width: 600px) {
+  /* HEADER STYLES */
+  .header {
+    height: 80px; }
+  .header__icono {
+    display: block; }
+  .logo {
+    width: 100px;
+    height: 50px;
+    padding: 0px;
+    margin-left: 10px; }
+  .nav__list {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+    height: 100%; }
+  .nav {
+    display: none;
+    background-color: #f96ceb;
+    position: fixed;
+    z-index: 10000000000;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 100vh; }
+  .nav:target {
+    display: block; }
+  .nav__item--oculto {
+    display: block; } }
+
+/* MEDIA QUERIES */
+/* Movil */
+@media screen and (max-width: 600px) {
+  /* FOOTER  STYLES */
+  .footer {
+    display: flex;
+    flex-direction: column;
+    margin: 25px 20px 10px 20px;
+    background-color: rgba(164, 47, 207, 0.118); }
+  .footer_contac {
+    width: 100%;
+    text-align: center; }
+  .footer_contac > h1 {
+    font-size: 30px; }
+  .footer_visitus {
+    width: 100%;
+    text-align: center; }
+  .footer_visitus > h1 {
+    font-size: 30px; }
+  .finalFooter {
+    background-color: #cfcfed;
+    color: black; }
+  .finalFooter_logoRedes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .finalFooter_folowus > p {
+    font-size: 20px; }
+  .finalFooter_folowus > ul {
+    list-style: none; }
+  .finalFooter_folowus {
+    margin-right: 25px; }
+  .finalFooter_copyright {
+    text-align: center; }
+  .logoFooter {
+    width: 150px; } }
+
 /* MAIN STYLES */
 .main {
   margin-top: 100px;
@@ -141,18 +211,50 @@ ul {
   text-align: end;
   margin-top: 25px; }
 
-/* CAROUSEL PHONES*/
+/* CAROUSEL PHONES */
 .grid__hijo3 {
   grid-area: hijo3;
   display: flex;
   align-items: center;
   justify-content: center; }
 
-.carousel-item img {
+.slider {
+  width: 100%;
+  height: 200px;
+  overflow: hidden; }
+
+.slider ul {
+  display: flex;
+  animation: cambio 15s infinite alternate linear;
+  width: 400%; }
+
+.slider li {
+  width: 100%;
+  list-style: none; }
+
+.slider img {
   width: 100%;
   height: 200px; }
 
-/* ROOMS STYLES */
+@keyframes cambio {
+  0% {
+    margin-left: 0; }
+  20% {
+    margin-left: 0; }
+  25% {
+    margin-left: -100%; }
+  45% {
+    margin-left: -100%; }
+  50% {
+    margin-left: -200%; }
+  70% {
+    margin-left: -200%; }
+  75% {
+    margin-left: -300%; }
+  100% {
+    margin-left: -300%; } }
+
+/*ROOMS STYLES */
 .inicioMainRooms {
   display: flex;
   flex-direction: column;
@@ -238,35 +340,6 @@ ul {
 /* MEDIA QUERIES */
 /* Movil */
 @media screen and (max-width: 600px) {
-  /* HEADER STYLES */
-  .header {
-    height: 80px; }
-  .header__icono {
-    display: block; }
-  .logo {
-    width: 100px;
-    height: 50px;
-    padding: 0px;
-    margin-left: 10px; }
-  .nav__list {
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 1rem;
-    height: 100%; }
-  .nav {
-    display: none;
-    background-color: #f96ceb;
-    position: fixed;
-    z-index: 10000000000;
-    top: 0;
-    left: 0;
-    width: 80%;
-    height: 100vh; }
-  .nav:target {
-    display: block; }
-  .nav__item--oculto {
-    display: block; }
   /* MAIN STYLES */
   .main {
     margin-top: 100px;
@@ -311,6 +384,8 @@ ul {
     display: flex;
     align-items: center;
     justify-content: space-around; }
+  .slider {
+    width: 100%; }
   /* ROOMS STYLES */
   .inicioMainRooms {
     display: flex;
@@ -391,37 +466,4 @@ ul {
     height: 300px; }
   .grid__services > li > h1 {
     font-size: 35px;
-    margin-bottom: 25px; }
-  /* FOOTER  STYLES */
-  .footer {
-    display: flex;
-    flex-direction: column;
-    margin: 25px 20px 10px 20px;
-    background-color: rgba(164, 47, 207, 0.118); }
-  .footer_contac {
-    width: 100%;
-    text-align: center; }
-  .footer_contac > h1 {
-    font-size: 50px; }
-  .footer_visitus {
-    width: 100%;
-    text-align: center; }
-  .footer_visitus > h1 {
-    font-size: 50px; }
-  .finalFooter {
-    background-color: #cfcfed;
-    color: black; }
-  .finalFooter_logoRedes {
-    display: flex;
-    justify-content: space-between;
-    align-items: center; }
-  .finalFooter_folowus > p {
-    font-size: 20px; }
-  .finalFooter_folowus > ul {
-    list-style: none; }
-  .finalFooter_folowus {
-    margin-right: 25px; }
-  .finalFooter_copyright {
-    text-align: center; }
-  .logoFooter {
-    width: 150px; } }
+    margin-bottom: 25px; } }
