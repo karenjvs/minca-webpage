@@ -126,6 +126,10 @@
   font-size: 20px;
 }
 
+.inicioMainRooms > a:hover {
+  text-decoration: underline;
+}
+
 .grid__rooms{
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -170,6 +174,10 @@
   font-size: 20px;
 }
 
+.inicioMainServices > a:hover {
+  text-decoration: underline;
+}
+
 .inicioMainServices > h1 {
   font-size: 50px;
 }
@@ -194,6 +202,7 @@
   align-items: center;
   flex-direction:column;
   justify-content: center;
+  padding: 20px;
 }
 
 .grid__services > img {

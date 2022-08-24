@@ -271,6 +271,9 @@ ul {
   text-align: end;
   font-size: 20px; }
 
+.inicioMainRooms > a:hover {
+  text-decoration: underline; }
+
 .grid__rooms {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -307,6 +310,9 @@ ul {
   text-align: end;
   font-size: 20px; }
 
+.inicioMainServices > a:hover {
+  text-decoration: underline; }
+
 .inicioMainServices > h1 {
   font-size: 50px; }
 
@@ -327,7 +333,8 @@ ul {
   list-style: none;
   align-items: center;
   flex-direction: column;
-  justify-content: center; }
+  justify-content: center;
+  padding: 20px; }
 
 .grid__services > img {
   margin: auto;
