@@ -2,7 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  text-decoration: none; }
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif; }
 
 ul {
   padding-left: 0px;
@@ -169,25 +170,138 @@ ul {
 /* MAIN STYLES */
 .grid_experiences {
   display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 1fr;
-  margin: 120px 100px 30px 100px;
+  grid-template-columns: repeat(2, 50%);
   column-gap: 5px;
-  grid-template-areas: "hijo1 hijo2"; }
+  grid-template-areas: "hijo1 hijo2" "hijo3 hijo3";
+  margin: 120px 100px 30px 100px; }
 
 .mainExp__intro-bestExp {
-  background-color: antiquewhite;
   grid-area: hijo1;
-  height: 500px; }
+  background-color: antiquewhite;
+  padding: 15px; }
 
-.mainExp__intro-bestExp > h1 {
-  margin: 20px; }
+.mainExp__intro-bestExp-texts {
+  text-align: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.mainExp__intro-bestExp-texts h1 {
+  font-size: 45px;
+  margin-bottom: 10px; }
+
+.mainExp__intro-bestExp-texts p {
+  font-size: 20px; }
 
 .mainExp__intro-cover {
-  /* TO BE DEFINED PHOTOS IN CAROUSEL */
   grid-area: hijo2;
+  width: 80%;
+  height: 300px;
+  justify-self: center; }
+
+.mainExp__experiences {
+  grid-area: hijo3; }
+
+.mainExp__title-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px; }
+
+.mainExp__title-cards h1 {
+  font-size: 50px;
+  letter-spacing: 10px; }
+
+.mainExp__cards-container {
   width: 100%;
-  height: 500px; }
+  margin: 30px 0px 80px;
+  padding: 0px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background: #f7fbfd;
+  border-radius: 20px;
+  box-shadow: 0 0 60px 20px #f1f1f1;
+  perspective: 1000px; }
+
+.mainExp__card-container {
+  margin: 20px; }
+
+.mainExp__card-container:hover .mainExp__card {
+  transform: rotateY(180deg); }
+
+.mainExp__card {
+  width: 300px;
+  height: 250px;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: all 600ms; }
+
+.mainExp__card-front, .mainExp__card-back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  border-radius: 20px; }
+
+.mainExp__card-front {
+  background-size: cover;
+  background-position: center; }
+
+.mainExp__card-back {
+  transform: rotateY(180deg);
+  background-color: white; }
+
+.mainExp__card-front-text {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  transform: translateZ(60px); }
+
+.mainExp__card-front-text h1 {
+  font-size: 20px; }
+
+.mainExp__card-front-bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 20px; }
+
+.mainExp__card-back-text {
+  padding: 10px;
+  text-align: center;
+  transform: translateZ(60px); }
+
+.mainExp__card-back-text p {
+  margin-top: 15px;
+  font-size: 15px; }
+
+.mainExp__card-back-text input {
+  padding: 10px 40px;
+  margin-top: 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  color: white;
+  background-color: #58b0f6;
+  box-shadow: 1px 1px 30px -5px #58b0f6;
+  border-radius: 10px;
+  transition: box-shadow 600ms; }
+
+.mainExp__card-back-text input:hover {
+  box-shadow: 1px 1px 30px 0px #449de6; }
 
 /* MEDIA QUERIES */
 /* Movil */
@@ -198,7 +312,7 @@ ul {
     grid-template-columns: 100%;
     grid-template-rows: 1fr;
     margin: 100px 20px 10px 20px;
-    grid-template-areas: "hijo1" "hijo2"; }
+    grid-template-areas: "hijo1" "hijo2" "hijo3"; }
   .mainExp__intro-bestExp {
     background-color: antiquewhite;
     height: 400px;
@@ -209,7 +323,10 @@ ul {
     margin: 20px;
     text-align: center; }
   .mainExp__intro-cover {
-    /* TO BE DEFINED PHOTOS IN CAROUSEL */
     grid-area: hijo2;
     width: 100%;
-    height: 300px; } }
+    height: 300px; }
+  .mainExp__cards-container {
+    margin-bottom: 10px; }
+  .mainExp__card {
+    width: 400px; } }
