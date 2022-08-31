@@ -5,6 +5,9 @@
   text-decoration: none;
   font-family: 'Poppins', sans-serif; }
 
+body {
+  background-color: rgba(160, 225, 235, 0.4); }
+
 ul {
   padding-left: 0px;
   margin-bottom: 0px; }
@@ -64,14 +67,18 @@ ul {
 /* FOOTER  STYLES */
 .footer {
   display: flex;
-  margin: 25px 100px 10px 100px;
-  background-color: rgba(164, 47, 207, 0.118); }
+  margin: 25px 100px 10px 100px; }
 
 .footer_contac {
-  width: 50%; }
+  width: 50%;
+  padding-left: 100px; }
 
 .footer_contac > h1 {
-  font-size: 50px; }
+  font-size: 50px;
+  margin-bottom: 10px; }
+
+.footer_contac > p {
+  margin-bottom: 10px; }
 
 .footer_visitus {
   width: 50%;
@@ -81,7 +88,7 @@ ul {
   font-size: 50px; }
 
 .finalFooter {
-  background-color: #cfcfed;
+  background-color: rgba(207, 207, 237, 0.613);
   color: black; }
 
 .finalFooter_logoRedes {
@@ -89,14 +96,30 @@ ul {
   justify-content: space-between;
   align-items: center; }
 
+.finalFooter_folowus {
+  margin-right: 25px; }
+
 .finalFooter_folowus > p {
-  font-size: 25px; }
+  font-size: 25px;
+  margin-bottom: 10px; }
 
 .finalFooter_folowus > ul {
   list-style: none; }
 
-.finalFooter_folowus {
-  margin-right: 25px; }
+.finalFooter_folowus_facebook {
+  display: flex;
+  align-items: center; }
+
+.finalFooter_folowus_facebook > img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px; }
+
+.finalFooter_folowus_facebook > a {
+  color: black; }
+
+.finalFooter_folowus_facebook > a:hover {
+  text-decoration: underline; }
 
 .finalFooter_copyright {
   text-align: center; }
@@ -144,18 +167,19 @@ ul {
   .footer {
     display: flex;
     flex-direction: column;
-    margin: 25px 20px 10px 20px;
-    background-color: rgba(164, 47, 207, 0.118); }
+    margin: 25px 20px 10px 20px; }
   .footer_contac {
     width: 100%;
-    text-align: center; }
+    text-align: center;
+    padding-left: 0px; }
   .footer_contac > h1 {
     font-size: 30px; }
   .footer_visitus {
     width: 100%;
     text-align: center; }
   .footer_visitus > h1 {
-    font-size: 30px; }
+    font-size: 30px;
+    margin-top: 20px; }
   .finalFooter {
     background-color: #cfcfed;
     color: black; }
@@ -184,7 +208,7 @@ ul {
 
 .mainExp__intro-bestExp {
   grid-area: hijo1;
-  background-color: antiquewhite;
+  background-color: #ead6cb;
   padding: 15px; }
 
 .mainExp__intro-bestExp-texts {
@@ -321,7 +345,7 @@ ul {
     margin: 100px 20px 10px 20px;
     grid-template-areas: "hijo1" "hijo2" "hijo3"; }
   .mainExp__intro-bestExp {
-    background-color: antiquewhite;
+    background-color: #ead6cb;
     height: 400px;
     grid-area: hijo1; }
   .mainExp__intro-bestExp > h1 {

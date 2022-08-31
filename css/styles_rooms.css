@@ -5,6 +5,9 @@
   text-decoration: none;
   font-family: 'Poppins', sans-serif; }
 
+body {
+  background-color: rgba(160, 225, 235, 0.4); }
+
 ul {
   padding-left: 0px;
   margin-bottom: 0px; }
@@ -64,14 +67,18 @@ ul {
 /* FOOTER  STYLES */
 .footer {
   display: flex;
-  margin: 25px 100px 10px 100px;
-  background-color: rgba(164, 47, 207, 0.118); }
+  margin: 25px 100px 10px 100px; }
 
 .footer_contac {
-  width: 50%; }
+  width: 50%;
+  padding-left: 100px; }
 
 .footer_contac > h1 {
-  font-size: 50px; }
+  font-size: 50px;
+  margin-bottom: 10px; }
+
+.footer_contac > p {
+  margin-bottom: 10px; }
 
 .footer_visitus {
   width: 50%;
@@ -81,7 +88,7 @@ ul {
   font-size: 50px; }
 
 .finalFooter {
-  background-color: #cfcfed;
+  background-color: rgba(207, 207, 237, 0.613);
   color: black; }
 
 .finalFooter_logoRedes {
@@ -89,14 +96,30 @@ ul {
   justify-content: space-between;
   align-items: center; }
 
+.finalFooter_folowus {
+  margin-right: 25px; }
+
 .finalFooter_folowus > p {
-  font-size: 25px; }
+  font-size: 25px;
+  margin-bottom: 10px; }
 
 .finalFooter_folowus > ul {
   list-style: none; }
 
-.finalFooter_folowus {
-  margin-right: 25px; }
+.finalFooter_folowus_facebook {
+  display: flex;
+  align-items: center; }
+
+.finalFooter_folowus_facebook > img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px; }
+
+.finalFooter_folowus_facebook > a {
+  color: black; }
+
+.finalFooter_folowus_facebook > a:hover {
+  text-decoration: underline; }
 
 .finalFooter_copyright {
   text-align: center; }
@@ -144,18 +167,19 @@ ul {
   .footer {
     display: flex;
     flex-direction: column;
-    margin: 25px 20px 10px 20px;
-    background-color: rgba(164, 47, 207, 0.118); }
+    margin: 25px 20px 10px 20px; }
   .footer_contac {
     width: 100%;
-    text-align: center; }
+    text-align: center;
+    padding-left: 0px; }
   .footer_contac > h1 {
     font-size: 30px; }
   .footer_visitus {
     width: 100%;
     text-align: center; }
   .footer_visitus > h1 {
-    font-size: 30px; }
+    font-size: 30px;
+    margin-top: 20px; }
   .finalFooter {
     background-color: #cfcfed;
     color: black; }
@@ -198,7 +222,7 @@ ul {
   align-items: center;
   justify-content: center;
   width: 50%;
-  background-color: antiquewhite; }
+  background-color: #03c8e6a5; }
 
 .mainRooms__intro-ourRooms > h1 {
   margin-bottom: 20px; }
@@ -222,7 +246,7 @@ ul {
 
 .mainRooms__description {
   display: flex;
-  background-color: rgba(255, 213, 0, 0.715);
+  background-color: #ead6cb;
   width: 50%;
   list-style: none;
   align-items: center;
@@ -232,7 +256,7 @@ ul {
 
 .mainRooms__description > p {
   text-align: center;
-  margin: 20px 10px 20px 10px; }
+  margin: 25px 10px; }
 
 .slider {
   width: 50%;
@@ -303,7 +327,7 @@ ul {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: antiquewhite;
+    background-color: #03c8e6a5;
     width: 100%; }
   .mainRooms__intro-ourRooms > h1 {
     margin-bottom: 20px;
@@ -330,7 +354,7 @@ ul {
     flex-direction: column; }
   .mainRooms__description {
     display: flex;
-    background-color: rgba(255, 213, 0, 0.715);
+    background-color: #ead6cb;
     width: 100%;
     align-items: center;
     flex-direction: column;
@@ -340,8 +364,12 @@ ul {
     width: 100%; }
   .mainRooms__description > h1 {
     font-size: 35px;
-    margin-bottom: 25px;
+    margin-bottom: 2px;
     margin-top: 10px; }
+  .mainRooms__description > p {
+    margin: 15px 15px; }
+  .mainRooms__description > strong {
+    margin-bottom: 15px; }
   .mainRooms__rooms-container > h1 {
     font-size: 50px; }
   .mainRooms__rooms-container > ul {

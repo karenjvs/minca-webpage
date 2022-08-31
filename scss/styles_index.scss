@@ -26,7 +26,7 @@
 .grid__hijo1{
   grid-area: hijo1;
   text-align: center;
-  background-color: antiquewhite;
+  background-color: #034b8ac3;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -35,11 +35,12 @@
 .grid__hijo1_Span{
   font-size: 25px;
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: white;
 }
 
 .grid__hijo2{
   grid-area: hijo2;
-  background-color: rgba(165, 47, 207, 0.502);
+  background-color: #03c8e6a5;
   display: flex;
   flex-direction:column;
   justify-content: center;
@@ -55,9 +56,28 @@
   display: flex;
   margin-bottom: 15px;
 }
+
 .grid__hijo2_reservationSubmit{
   text-align: end;
-  margin-top: 25px;
+}
+
+.grid__hijo2_reservationSubmit > input {
+  background-color: #034a8a;
+  border: none;
+  color: white;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.grid__hijo2_reservationSubmit > input:hover {
+  background-color: #03c8e6a5;
+  border: 2px solid #034a8a;
+  color: black;
+  padding: 8px 30px;
+  cursor: pointer;
+  transition-duration: 0.4s;
 }
 
 /* CAROUSEL PHONES */
@@ -124,6 +144,7 @@
 .inicioMainRooms > a {
   text-align: end;
   font-size: 20px;
+  color: black;
 }
 
 .inicioMainRooms > a:hover {
@@ -141,7 +162,7 @@
 
 .grid__rooms > li {
   display: flex;
-  background-color: rgba(255, 0, 200, 0.143);
+  background-color: #ead6cb;
   align-items: center;
   flex-direction:column;
   justify-content: center;
@@ -160,7 +181,6 @@
   @include sizes(100%, 300px);
 }
 
-
 /* SERVICES STYLES */
 
 .inicioMainServices{
@@ -172,6 +192,7 @@
 .inicioMainServices > a {
   text-align: end;
   font-size: 20px;
+  color: black;
 }
 
 .inicioMainServices > a:hover {
@@ -197,7 +218,7 @@
 
 .grid__services > li {
   display: flex;
-  background-color: rgba(255, 213, 0, 0.715);
+  background-color: rgba(255, 213, 0, 0.532);
   list-style: none;
   align-items: center;
   flex-direction:column;
@@ -215,14 +236,10 @@
   margin-bottom: 25px;
 }
 
-
-
-
 /* MEDIA QUERIES */
 
 /* Movil */
 @media screen and (max-width:600px){
-
   /* MAIN STYLES */
 
   .main {
@@ -246,7 +263,7 @@
   .grid__hijo1{
     grid-area: hijo1;
     text-align: center;
-    background-color: antiquewhite;
+    background-color: #034b8ac3;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -259,7 +276,7 @@
 
   .grid__hijo2{
     grid-area: hijo2;
-    background-color: rgba(165, 47, 207, 0.502);
+    background-color: #03c8e6a5;
     display: flex;
     flex-direction:column;
     justify-content: center;
@@ -353,7 +370,7 @@
 
   .grid__rooms > li {
     display: flex;
-    background-color: rgba(255, 0, 200, 0.143);
+    background-color: #ead6cb;
     align-items: center;
     flex-direction:column;
     justify-content: center;
@@ -409,14 +426,14 @@
 
   .grid__services > li {
     display: flex;
-    background-color: rgba(255, 213, 0, 0.715);
+    background-color: rgba(255, 213, 0, 0.532);
     list-style: none;
     align-items: center;
     flex-direction:column;
     justify-content: center;
   }
 
-  .grid__services > img {
+  .grid__services > img { 
     margin: auto;
     @include sizes(100%, 300px);
   }

@@ -1,21 +1,18 @@
-
 /* MEDIA QUERIES */
-
 /* Movil */
 @media screen and (max-width:600px){
-
   /* FOOTER  STYLES */
 
   .footer{
     display: flex;
     flex-direction: column;
     margin: 25px 20px 10px 20px;
-    background-color: rgba(164, 47, 207, 0.118);
   }
 
   .footer_contac{
     width: 100%;
     text-align: center;
+    padding-left: 0px;
   }
 
   .footer_contac  > h1 {
@@ -29,6 +26,7 @@
 
   .footer_visitus  > h1 {
     font-size: 30px;
+    margin-top: 20px;
   }
 
   .finalFooter{
@@ -61,5 +59,4 @@
   .logoFooter{
     width: 150px;
   }
-
 }

@@ -33,7 +33,7 @@
   align-items: center;
   justify-content: center;
   width: 50%;
-  background-color:antiquewhite;
+  background-color:#03c8e6a5;
 }
 
 .mainRooms__intro-ourRooms > h1 {
@@ -63,7 +63,7 @@
 
 .mainRooms__description {
   display: flex;
-  background-color: rgba(255, 213, 0, 0.715);
+  background-color: #ead6cb;
   width: 50%;
   list-style: none;
   align-items: center;
@@ -74,7 +74,7 @@
 
 .mainRooms__description > p {
   text-align: center;
-  margin: 20px 10px 20px 10px;
+  margin: 25px 10px;
 }
 
 .slider{
@@ -157,7 +157,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color:antiquewhite;
+    background-color:#03c8e6a5;
     width: 100%;
   }
 
@@ -197,7 +197,7 @@
 
   .mainRooms__description {
     display: flex;
-    background-color: rgba(255, 213, 0, 0.715);
+    background-color: #ead6cb;
     width: 100%;
     align-items: center;
     flex-direction:column;
@@ -211,8 +211,16 @@
 
   .mainRooms__description > h1 {
     font-size: 35px;
-    margin-bottom: 25px;
+    margin-bottom: 2px;
     margin-top: 10px;
+  }
+
+  .mainRooms__description > p {
+    margin: 15px 15px;
+  }
+
+  .mainRooms__description > strong {
+    margin-bottom: 15px;
   }
 
   .mainRooms__rooms-container  > h1 {
@@ -222,7 +230,4 @@
   .mainRooms__rooms-container  > ul {
     margin-top: 25px;
   }
-
-
 }
-

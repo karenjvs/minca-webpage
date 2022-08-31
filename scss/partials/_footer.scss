@@ -3,15 +3,20 @@
 .footer{
   display: flex;
   margin: 25px 100px 10px 100px;
-  background-color: rgba(164, 47, 207, 0.118);
 }
 
 .footer_contac{
   width: 50%;
+  padding-left: 100px;
 }
 
 .footer_contac  > h1 {
   font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.footer_contac  > p {
+  margin-bottom: 10px;
 }
 
 .footer_visitus{
@@ -24,7 +29,7 @@
 }
 
 .finalFooter{
-  background-color:rgb(207, 207, 237);
+  background-color:rgba(207, 207, 237, 0.613);
   color: black;
 }
 
@@ -34,16 +39,35 @@
   align-items: center;
 }
 
+.finalFooter_folowus {
+  margin-right: 25px;
+}
+
 .finalFooter_folowus > p {
   font-size: 25px;
+  margin-bottom: 10px;
 }
 
 .finalFooter_folowus > ul {
   list-style: none;
-  }
+}
 
-.finalFooter_folowus {
-  margin-right: 25px;
+.finalFooter_folowus_facebook {
+  display: flex;
+  align-items: center;
+}
+
+.finalFooter_folowus_facebook > img {
+  @include sizes(20px, 20px);
+  margin-right: 10px;
+}
+
+.finalFooter_folowus_facebook > a {
+  color: black;
+}
+
+.finalFooter_folowus_facebook > a:hover {
+  text-decoration: underline;
 }
 
 .finalFooter_copyright{

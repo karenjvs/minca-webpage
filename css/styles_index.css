@@ -5,6 +5,9 @@
   text-decoration: none;
   font-family: 'Poppins', sans-serif; }
 
+body {
+  background-color: rgba(160, 225, 235, 0.4); }
+
 ul {
   padding-left: 0px;
   margin-bottom: 0px; }
@@ -64,14 +67,18 @@ ul {
 /* FOOTER  STYLES */
 .footer {
   display: flex;
-  margin: 25px 100px 10px 100px;
-  background-color: rgba(164, 47, 207, 0.118); }
+  margin: 25px 100px 10px 100px; }
 
 .footer_contac {
-  width: 50%; }
+  width: 50%;
+  padding-left: 100px; }
 
 .footer_contac > h1 {
-  font-size: 50px; }
+  font-size: 50px;
+  margin-bottom: 10px; }
+
+.footer_contac > p {
+  margin-bottom: 10px; }
 
 .footer_visitus {
   width: 50%;
@@ -81,7 +88,7 @@ ul {
   font-size: 50px; }
 
 .finalFooter {
-  background-color: #cfcfed;
+  background-color: rgba(207, 207, 237, 0.613);
   color: black; }
 
 .finalFooter_logoRedes {
@@ -89,14 +96,30 @@ ul {
   justify-content: space-between;
   align-items: center; }
 
+.finalFooter_folowus {
+  margin-right: 25px; }
+
 .finalFooter_folowus > p {
-  font-size: 25px; }
+  font-size: 25px;
+  margin-bottom: 10px; }
 
 .finalFooter_folowus > ul {
   list-style: none; }
 
-.finalFooter_folowus {
-  margin-right: 25px; }
+.finalFooter_folowus_facebook {
+  display: flex;
+  align-items: center; }
+
+.finalFooter_folowus_facebook > img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px; }
+
+.finalFooter_folowus_facebook > a {
+  color: black; }
+
+.finalFooter_folowus_facebook > a:hover {
+  text-decoration: underline; }
 
 .finalFooter_copyright {
   text-align: center; }
@@ -144,18 +167,19 @@ ul {
   .footer {
     display: flex;
     flex-direction: column;
-    margin: 25px 20px 10px 20px;
-    background-color: rgba(164, 47, 207, 0.118); }
+    margin: 25px 20px 10px 20px; }
   .footer_contac {
     width: 100%;
-    text-align: center; }
+    text-align: center;
+    padding-left: 0px; }
   .footer_contac > h1 {
     font-size: 30px; }
   .footer_visitus {
     width: 100%;
     text-align: center; }
   .footer_visitus > h1 {
-    font-size: 30px; }
+    font-size: 30px;
+    margin-top: 20px; }
   .finalFooter {
     background-color: #cfcfed;
     color: black; }
@@ -190,18 +214,19 @@ ul {
 .grid__hijo1 {
   grid-area: hijo1;
   text-align: center;
-  background-color: antiquewhite;
+  background-color: #034b8ac3;
   display: flex;
   justify-content: center;
   align-items: center; }
 
 .grid__hijo1_Span {
   font-size: 25px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: white; }
 
 .grid__hijo2 {
   grid-area: hijo2;
-  background-color: rgba(165, 47, 207, 0.502);
+  background-color: #03c8e6a5;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -216,8 +241,24 @@ ul {
   margin-bottom: 15px; }
 
 .grid__hijo2_reservationSubmit {
-  text-align: end;
-  margin-top: 25px; }
+  text-align: end; }
+
+.grid__hijo2_reservationSubmit > input {
+  background-color: #034a8a;
+  border: none;
+  color: white;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px; }
+
+.grid__hijo2_reservationSubmit > input:hover {
+  background-color: #03c8e6a5;
+  border: 2px solid #034a8a;
+  color: black;
+  padding: 8px 30px;
+  cursor: pointer;
+  transition-duration: 0.4s; }
 
 /* CAROUSEL PHONES */
 .grid__hijo3 {
@@ -276,7 +317,8 @@ ul {
 
 .inicioMainRooms > a {
   text-align: end;
-  font-size: 20px; }
+  font-size: 20px;
+  color: black; }
 
 .inicioMainRooms > a:hover {
   text-decoration: underline; }
@@ -291,7 +333,7 @@ ul {
 
 .grid__rooms > li {
   display: flex;
-  background-color: rgba(255, 0, 200, 0.143);
+  background-color: #ead6cb;
   align-items: center;
   flex-direction: column;
   justify-content: center; }
@@ -315,7 +357,8 @@ ul {
 
 .inicioMainServices > a {
   text-align: end;
-  font-size: 20px; }
+  font-size: 20px;
+  color: black; }
 
 .inicioMainServices > a:hover {
   text-decoration: underline; }
@@ -336,7 +379,7 @@ ul {
 
 .grid__services > li {
   display: flex;
-  background-color: rgba(255, 213, 0, 0.715);
+  background-color: rgba(255, 213, 0, 0.532);
   list-style: none;
   align-items: center;
   flex-direction: column;
@@ -369,7 +412,7 @@ ul {
   .grid__hijo1 {
     grid-area: hijo1;
     text-align: center;
-    background-color: antiquewhite;
+    background-color: #034b8ac3;
     display: flex;
     justify-content: center;
     align-items: center; }
@@ -378,7 +421,7 @@ ul {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
   .grid__hijo2 {
     grid-area: hijo2;
-    background-color: rgba(165, 47, 207, 0.502);
+    background-color: #03c8e6a5;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -434,7 +477,7 @@ ul {
     grid-area: hijo4; }
   .grid__rooms > li {
     display: flex;
-    background-color: rgba(255, 0, 200, 0.143);
+    background-color: #ead6cb;
     align-items: center;
     flex-direction: column;
     justify-content: center; }
@@ -470,7 +513,7 @@ ul {
     row-gap: 10px; }
   .grid__services > li {
     display: flex;
-    background-color: rgba(255, 213, 0, 0.715);
+    background-color: rgba(255, 213, 0, 0.532);
     list-style: none;
     align-items: center;
     flex-direction: column;
