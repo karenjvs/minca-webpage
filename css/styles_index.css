@@ -87,6 +87,11 @@ ul {
 .footer_visitus > h1 {
   font-size: 50px; }
 
+.footer_visitus > iframe {
+  width: 300px;
+  height: 200px;
+  border: 0; }
+
 .finalFooter {
   background-color: rgba(207, 207, 237, 0.613);
   color: black; }
@@ -180,6 +185,10 @@ ul {
   .footer_visitus > h1 {
     font-size: 30px;
     margin-top: 20px; }
+  .footer_visitus > iframe {
+    width: 200px;
+    height: 150px;
+    border: 0; }
   .finalFooter {
     background-color: #cfcfed;
     color: black; }
@@ -518,6 +527,8 @@ ul {
     align-items: center;
     flex-direction: column;
     justify-content: center; }
+  .grid__services > li > h1 {
+    text-align: center; }
   .grid__services > img {
     margin: auto;
     width: 100%;

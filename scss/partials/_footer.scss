@@ -28,6 +28,11 @@
   font-size: 50px;
 }
 
+.footer_visitus  > iframe {
+  @include sizes(300px, 200px);
+  border: 0;
+}
+
 .finalFooter{
   background-color:rgba(207, 207, 237, 0.613);
   color: black;

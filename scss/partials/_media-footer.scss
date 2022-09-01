@@ -29,6 +29,11 @@
     margin-top: 20px;
   }
 
+  .footer_visitus  > iframe {
+    @include sizes(200px, 150px);
+    border: 0;
+  }
+
   .finalFooter{
     background-color:rgb(207, 207, 237);
     color: black;

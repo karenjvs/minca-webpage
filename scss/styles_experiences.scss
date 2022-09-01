@@ -191,13 +191,12 @@
     grid-area: hijo1;
   }
 
-  .mainExp__intro-bestExp > h1{
-    margin: 20px;
+  .mainExp__intro-bestExp-texts > h1 {
+    font-size: 25px;
   }
 
-  .mainExp__intro-bestExp > p {
-    margin: 20px;
-    text-align: center;
+  .mainExp__intro-bestExp-texts > p {
+    margin-bottom: 15px;
   }
 
   .mainExp__intro-cover{
@@ -211,6 +210,11 @@
   }
 
   .mainExp__card {
-    width: 400px;
+    width: 250px;
+  }
+
+  .mainExp__title-cards h1 {
+    font-size: 20px;
+    letter-spacing: 10px;
   }
 }

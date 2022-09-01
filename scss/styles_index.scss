@@ -433,7 +433,11 @@
     justify-content: center;
   }
 
-  .grid__services > img { 
+  .grid__services > li > h1 {
+    text-align: center;
+  }
+
+  .grid__services > img {
     margin: auto;
     @include sizes(100%, 300px);
   }

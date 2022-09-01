@@ -87,6 +87,11 @@ ul {
 .footer_visitus > h1 {
   font-size: 50px; }
 
+.footer_visitus > iframe {
+  width: 300px;
+  height: 200px;
+  border: 0; }
+
 .finalFooter {
   background-color: rgba(207, 207, 237, 0.613);
   color: black; }
@@ -180,6 +185,10 @@ ul {
   .footer_visitus > h1 {
     font-size: 30px;
     margin-top: 20px; }
+  .footer_visitus > iframe {
+    width: 200px;
+    height: 150px;
+    border: 0; }
   .finalFooter {
     background-color: #cfcfed;
     color: black; }
@@ -363,12 +372,14 @@ ul {
   .slider {
     width: 100%; }
   .mainRooms__description > h1 {
-    font-size: 35px;
+    font-size: 25px;
     margin-bottom: 2px;
     margin-top: 10px; }
   .mainRooms__description > p {
+    font-size: 15px;
     margin: 15px 15px; }
   .mainRooms__description > strong {
+    font-size: 15px;
     margin-bottom: 15px; }
   .mainRooms__rooms-container > h1 {
     font-size: 50px; }
